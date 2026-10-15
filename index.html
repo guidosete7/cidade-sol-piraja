@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade Sol - Garagem Pirajá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1>Viação Cidade Sol</h1>
+            <p>Garagem de Pirajá - Gestão de Frota e Almoxarifado</p>
+        </div>
+    </header>
+
+    <!-- Seção Principal: Frota de Ônibus -->
+    <main class="container">
+        <section class="frota-section">
+            <h2>Frota de Ônibus</h2>
+            
+            <div class="frota-container">
+                <!-- Visualizador da Foto Selecionada -->
+                <div class="painel-foto">
+                    <div class="moldura-foto-onibus">
+                        <img id="foto-onibus-destaque" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Ônibus Selecionado">
+                    </div>
+                    <div id="detalhe-onibus-selecionado" class="info-destaque">
+                        <h3>Prefixo: <span id="destaque-prefixo">9490</span></h3>
+                        <p><strong>Montadora:</strong> <span id="destaque-montadora">Marcopolo</span></p>
+                        <p><strong>Chassi:</strong> <span id="destaque-chassi">M.B. O500 R 1830</span></p>
+                        <p><strong>Motor:</strong> <span id="destaque-motor">OM-926 LA</span></p>
+                    </div>
+                </div>
+
+                <!-- Lista dos 10 Ônibus -->
+                <div class="lista-onibus">
+                    <div class="card-onibus ativo" onclick="selecionarOnibus('9490', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLJo9lIw2-NPL8ScE-VOrjYFmZ-gNk9NW-zVMyn3qWg&s=10')">
+                        <div class="badge-prefixo">9490</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo</p>
+                            <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('9500', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hbi7gQobw9UwKMyA9UAh6dL0XYf1aZe_nW9rLrPe7Q&s=10')">
+                        <div class="badge-prefixo">9500</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo</p>
+                            <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('9510', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-1wbrq7EFJV4P899G0uo5sYUVifcbeXNB6ansT1qtA&s=10')">
+                        <div class="badge-prefixo">9510</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo</p>
+                            <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('9520', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDDpqwQ2t9tYLIh6DuInC7UG-5EheEIaPT_3UGDMasQ&s=10')">
+                        <div class="badge-prefixo">9520</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo</p>
+                            <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('9530', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2k-EdtHrtjIUf-WE5zaorAwKz1MILmfk2il_I8wIxYw&s=10')">
+                        <div class="badge-prefixo">9530</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo</p>
+                            <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('9550', 'M.B. O 500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQUXJbQlVnYyTO1OU4zXhBr_xQoIToYjLHzKHp05_5w&s=10')">
+                        <div class="badge-prefixo">9550</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo</p>
+                            <p><strong>Chassi:</strong> M.B. O 500 R 1830</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('2338', 'M.B. O-500R 1830', 'OM-926LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyguQPsYwpCDXDDbfyAbf3YgMKbzIMgQTujofX6S28jg&s=10')">
+                        <div class="badge-prefixo">2338</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo</p>
+                            <p><strong>Chassi:</strong> M.B. O-500R 1830</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('610', 'M.B. LO 916 EURO-V', 'OM-924LA', 'Neobus / Micro', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJ1kHXQi0GBv6-VPfYbHDvhDjgz8N6JPpB52jSeuX5w&s=10')">
+                        <div class="badge-prefixo">610</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Neobus / Micro</p>
+                            <p><strong>Chassi:</strong> M.B. LO 916 EURO-V</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('620', 'M.B. LO 916 EURO-V', 'OM-924LA', 'Neobus / Micro', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJ1kHXQi0GBv6-VPfYbHDvhDjgz8N6JPpB52jSeuX5w&s=10')">
+                        <div class="badge-prefixo">620</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Neobus / Micro</p>
+                            <p><strong>Chassi:</strong> M.B. LO 916 EURO-V</p>
+                        </div>
+                    </div>
+
+                    <div class="card-onibus" onclick="selecionarOnibus('2401', 'M.B. OF 1721 EURO-V', 'OM-924LA', 'Marcopolo Ideale', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXP5MZQcuEtdNk4KEXm9T1cC0CX-bTGfzD6-k1t6ylog&s=10')">
+                        <div class="badge-prefixo">2401</div>
+                        <div class="dados-card">
+                            <p><strong>Montadora:</strong> Marcopolo Ideale</p>
+                            <p><strong>Chassi:</strong> M.B. OF 1721 EURO-V</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Equipe do Almoxarifado -->
+        <section class="almoxarifado-section">
+            <h2>Equipe do Almoxarifado</h2>
+            <div class="grid-equipe">
+                
+                <div class="card-integrante">
+                    <div class="moldura-equipe">
+                        <img src="https://i.ibb.co/LzLnp2cp/Captura-de-tela-2026-10-14-223729.png" alt="Marcos Gonçalves">
+                    </div>
+                    <h4>Marcos Gonçalves</h4>
+                    <p class="funcao">Encarregado Almoxarifado</p>
+                </div>
+
+                <div class="card-integrante">
+                    <div class="moldura-equipe">
+                        <img src="https://i.ibb.co/6RGM5VyH/Whats-App-Image-2026-10-14-at-21-36-49.jpg" alt="Joao Vitor">
+                    </div>
+                    <h4>Joao Vitor</h4>
+                    <p class="funcao">Almoxarife Pleno</p>
+                </div>
+
+                <div class="card-integrante">
+                    <div class="moldura-equipe">
+                        <img src="https://i.ibb.co/B2jvc76H/Captura-de-tela-2026-10-14-224628.png" alt="Guilherme Santos">
+                    </div>
+                    <h4>Guilherme Santos</h4>
+                    <p class="funcao">Jovem Aprendiz</p>
+                </div>
+
+                <div class="card-integrante">
+                    <div class="moldura-equipe">
+                        <img src="https://i.ibb.co/zhVTDQ4Q/Whats-App-Image-2026-10-14-at-21-36-13.jpg" alt="Joao Pedro">
+                    </div>
+                    <h4>Joao Pedro</h4>
+                    <p class="funcao">Auxiliar de Almoxarifado</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Garagem Pirajá - Viação Cidade Sol</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
