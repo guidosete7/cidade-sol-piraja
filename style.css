@@ -1,8 +1,11 @@
+/* Importação da Fonte Oficial Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -16,23 +19,64 @@ body {
     padding: 20px;
 }
 
-/* Header */
+/* Header & Navegação */
 .header {
     background-color: #002b49; /* Azul Corporativo Cidade Sol */
     color: #ffffff;
-    padding: 30px 0;
-    text-align: center;
+    padding: 20px 0;
     border-bottom: 5px solid #ffc72c; /* Amarelo Cidade Sol */
 }
 
-.header h1 {
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.simbolo-sol {
     font-size: 2.2rem;
-    margin-bottom: 5px;
+}
+
+.logo-texto {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .header p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #ffc72c;
+    margin-top: 2px;
+}
+
+/* Menu de Navegação */
+.menu-navegacao {
+    display: flex;
+    gap: 12px;
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover, .menu-link.ativo {
+    background-color: #ffc72c;
+    color: #002b49;
 }
 
 /* Títulos de Seção */
@@ -42,6 +86,14 @@ h2 {
     margin-bottom: 20px;
     border-left: 5px solid #ffc72c;
     padding-left: 10px;
+}
+
+.destaque-amarelo {
+    color: #ffc72c;
+}
+
+.destaque-azul {
+    color: #002b49;
 }
 
 /* Layout Frota */
@@ -173,6 +225,12 @@ h2 {
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-integrante:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 .moldura-equipe {
@@ -203,6 +261,29 @@ h2 {
     font-weight: 500;
 }
 
+/* Página História */
+.page-historia {
+    background: #ffffff;
+    padding: 35px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.linha-amarela {
+    width: 60px;
+    height: 4px;
+    background-color: #ffc72c;
+    margin: 10px 0 20px 0;
+}
+
+.conteudo-historia p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
 /* Footer */
 .footer {
     text-align: center;
@@ -211,4 +292,89 @@ h2 {
     color: #ffffff;
     margin-top: 40px;
     font-size: 0.9rem;
+}
+/* ==========================================================================
+   História Completa (Artigo)
+   ========================================================================== */
+.historia-completa-section {
+    padding: 6rem 0;
+    background-color: var(--bg-white);
+    border-top: 5px solid var(--primary-yellow);
+}
+
+/* O texto não deve ocupar a tela toda para não cansar a leitura */
+.article-container {
+    max-width: 850px; 
+    margin: 0 auto;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.article-title {
+    font-size: 2.8rem;
+    color: var(--primary-blue);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.article-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+.article-content h3.part-title {
+    font-size: 1.8rem;
+    color: var(--primary-yellow);
+    background-color: var(--primary-blue);
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+}
+
+.article-content h3 {
+    font-size: 1.6rem;
+    color: var(--primary-blue);
+    margin: 3rem 0 1rem 0;
+}
+
+.article-content h4 {
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+    margin: 2rem 0 1rem 0;
+    border-left: 4px solid var(--primary-yellow);
+    padding-left: 10px;
+}
+
+.article-content p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Estilo para as Imagens no meio do texto */
+.article-image {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.article-image img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.article-image figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
 }
