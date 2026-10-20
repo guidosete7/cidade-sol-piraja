@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
     <!-- Cabeçalho -->
     <header class="header">
         <div class="container">
@@ -15,14 +15,12 @@
             <p>Garagem de Pirajá - Gestão de Frota e Almoxarifado</p>
         </div>
     </header>
-
-    <!-- Seção Principal: Frota de Ônibus -->
+ 
     <main class="container">
+        <!-- Frota de Ônibus -->
         <section class="frota-section">
             <h2>Frota de Ônibus</h2>
-            
             <div class="frota-container">
-                <!-- Visualizador da Foto Selecionada -->
                 <div class="painel-foto">
                     <div class="moldura-foto-onibus">
                         <img id="foto-onibus-destaque" src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80" alt="Ônibus Selecionado">
@@ -34,17 +32,15 @@
                         <p><strong>Motor:</strong> <span id="destaque-motor">OM-926 LA</span></p>
                     </div>
                 </div>
-
-                <!-- Lista dos 10 Ônibus -->
+ 
                 <div class="lista-onibus">
-                    <div class="card-onibus ativo" onclick="selecionarOnibus('9490', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLJo9lIw2-NPL8ScE-VOrjYFmZ-gNk9NW-zVMyn3qWg&s=10')">
+                    <div class="card-onibus ativo" onclick="selecionarOnibus('9490', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlLJo9lIw2-NPL8ScE-VOrjYFmZ-gNk9NW-zVMyn3qWg&s=10')">
                         <div class="badge-prefixo">9490</div>
                         <div class="dados-card">
                             <p><strong>Montadora:</strong> Marcopolo</p>
                             <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('9500', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9hbi7gQobw9UwKMyA9UAh6dL0XYf1aZe_nW9rLrPe7Q&s=10')">
                         <div class="badge-prefixo">9500</div>
                         <div class="dados-card">
@@ -52,7 +48,6 @@
                             <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('9510', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-1wbrq7EFJV4P899G0uo5sYUVifcbeXNB6ansT1qtA&s=10')">
                         <div class="badge-prefixo">9510</div>
                         <div class="dados-card">
@@ -60,7 +55,6 @@
                             <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('9520', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXDDpqwQ2t9tYLIh6DuInC7UG-5EheEIaPT_3UGDMasQ&s=10')">
                         <div class="badge-prefixo">9520</div>
                         <div class="dados-card">
@@ -68,7 +62,6 @@
                             <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('9530', 'M.B. O500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2k-EdtHrtjIUf-WE5zaorAwKz1MILmfk2il_I8wIxYw&s=10')">
                         <div class="badge-prefixo">9530</div>
                         <div class="dados-card">
@@ -76,7 +69,6 @@
                             <p><strong>Chassi:</strong> M.B. O500 R 1830</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('9550', 'M.B. O 500 R 1830', 'OM-926 LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBQUXJbQlVnYyTO1OU4zXhBr_xQoIToYjLHzKHp05_5w&s=10')">
                         <div class="badge-prefixo">9550</div>
                         <div class="dados-card">
@@ -84,7 +76,6 @@
                             <p><strong>Chassi:</strong> M.B. O 500 R 1830</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('2338', 'M.B. O-500R 1830', 'OM-926LA', 'Marcopolo', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyguQPsYwpCDXDDbfyAbf3YgMKbzIMgQTujofX6S28jg&s=10')">
                         <div class="badge-prefixo">2338</div>
                         <div class="dados-card">
@@ -92,7 +83,6 @@
                             <p><strong>Chassi:</strong> M.B. O-500R 1830</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('610', 'M.B. LO 916 EURO-V', 'OM-924LA', 'Neobus / Micro', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJ1kHXQi0GBv6-VPfYbHDvhDjgz8N6JPpB52jSeuX5w&s=10')">
                         <div class="badge-prefixo">610</div>
                         <div class="dados-card">
@@ -100,7 +90,6 @@
                             <p><strong>Chassi:</strong> M.B. LO 916 EURO-V</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('620', 'M.B. LO 916 EURO-V', 'OM-924LA', 'Neobus / Micro', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUJ1kHXQi0GBv6-VPfYbHDvhDjgz8N6JPpB52jSeuX5w&s=10')">
                         <div class="badge-prefixo">620</div>
                         <div class="dados-card">
@@ -108,7 +97,6 @@
                             <p><strong>Chassi:</strong> M.B. LO 916 EURO-V</p>
                         </div>
                     </div>
-
                     <div class="card-onibus" onclick="selecionarOnibus('2401', 'M.B. OF 1721 EURO-V', 'OM-924LA', 'Marcopolo Ideale', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXP5MZQcuEtdNk4KEXm9T1cC0CX-bTGfzD6-k1t6ylog&s=10')">
                         <div class="badge-prefixo">2401</div>
                         <div class="dados-card">
@@ -119,97 +107,71 @@
                 </div>
             </div>
         </section>
-
-        <!-- Seção: Equipe do Almoxarifado -->
+ 
+        <!-- Equipe do Almoxarifado -->
         <section class="almoxarifado-section">
             <h2>Equipe do Almoxarifado</h2>
             <div class="grid-equipe">
-                
                 <div class="card-integrante">
-                    <div class="moldura-equipe">
-                        <img src="https://i.ibb.co/LzLnp2cp/Captura-de-tela-2026-10-14-223729.png" alt="Marcos Gonçalves">
-                    </div>
+                    <div class="moldura-equipe"><img src="https://i.ibb.co/LzLnp2cp/Captura-de-tela-2026-10-14-223729.png" alt="Marcos Gonçalves"></div>
                     <h4>Marcos Gonçalves</h4>
                     <p class="funcao">Encarregado Almoxarifado</p>
                 </div>
-
                 <div class="card-integrante">
-                    <div class="moldura-equipe">
-                        <img src="https://i.ibb.co/6RGM5VyH/Whats-App-Image-2026-10-14-at-21-36-49.jpg" alt="Joao Vitor">
-                    </div>
+                    <div class="moldura-equipe"><img src="https://i.ibb.co/6RGM5VyH/Whats-App-Image-2026-10-14-at-21-36-49.jpg" alt="Joao Vitor"></div>
                     <h4>Joao Vitor</h4>
                     <p class="funcao">Almoxarife Pleno</p>
                 </div>
-
                 <div class="card-integrante">
-                    <div class="moldura-equipe">
-                        <img src="https://i.ibb.co/B2jvc76H/Captura-de-tela-2026-10-14-224628.png" alt="Guilherme Santos">
-                    </div>
+                    <div class="moldura-equipe"><img src="https://i.ibb.co/B2jvc76H/Captura-de-tela-2026-10-14-224628.png" alt="Guilherme Santos"></div>
                     <h4>Guilherme Santos</h4>
                     <p class="funcao">Jovem Aprendiz</p>
                 </div>
-
                 <div class="card-integrante">
-                    <div class="moldura-equipe">
-                        <img src="https://i.ibb.co/zhVTDQ4Q/Whats-App-Image-2026-10-14-at-21-36-13.jpg" alt="Joao Pedro">
-                    </div>
+                    <div class="moldura-equipe"><img src="https://i.ibb.co/zhVTDQ4Q/Whats-App-Image-2026-10-14-at-21-36-13.jpg" alt="Joao Pedro"></div>
                     <h4>Joao Pedro</h4>
                     <p class="funcao">Auxiliar de Almoxarifado</p>
                 </div>
-
                 <div class="card-integrante">
-                    <div class="moldura-equipe">
-                        <img src="https://i.ibb.co/j9KGKJYX/Captura-de-tela-2026-10-16-113851.png" alt="Felipe Pastor">
-                    </div>
+                    <div class="moldura-equipe"><img src="https://i.ibb.co/j9KGKJYX/Captura-de-tela-2026-10-16-113851.png" alt="Felipe Pastor"></div>
                     <h4>Felipe Pastor</h4>
                     <p class="funcao">Almoxarife Senior</p>
                 </div>
-
-                 <div class="card-integrante">
-                    <div class="moldura-equipe">
-                        <img src="sem" alt="Joao Lucas">
-                    </div>
+                <div class="card-integrante">
+                    <div class="moldura-equipe"><img src="sem" alt="Joao Lucas"></div>
                     <h4>Joao Lucas</h4>
                     <p class="funcao">Auxiliar Almoxarifado</p>
                 </div>
-
-                 <div class="card-integrante">
-                    <div class="moldura-equipe">
-                        <img src="sem" alt="Taua">
-                    </div>
+                <div class="card-integrante">
+                    <div class="moldura-equipe"><img src="sem" alt="Taua"></div>
                     <h4>Taua</h4>
                     <p class="funcao">Jovem Aprendiz</p>
                 </div>
-
-
             </div>
         </section>
     </main>
-<!-- HISTÓRIA COMPLETA -->
+ 
+    <!-- História completa -->
     <section class="historia-completa-section" id="historia-detalhada">
         <div class="container article-container">
-            
             <div class="article-header">
                 <h2 class="article-title">A História Completa da Viação Cidade Sol</h2>
                 <p class="article-subtitle">Origem, expansão, estrutura empresarial e transformação do transporte rodoviário baiano (1940–2026)</p>
             </div>
-
+ 
             <div class="article-content">
-                <!-- INTRODUÇÃO -->
                 <h3>Introdução: por que a história da Cidade Sol é maior do que a história de uma empresa de ônibus</h3>
                 <p>A trajetória da Viação Jequié Cidade Sol pode ser compreendida como parte da própria evolução do transporte rodoviário na Bahia. Ao longo de mais de oito décadas, a empresa atravessou diferentes períodos econômicos, transformações na infraestrutura rodoviária, mudanças na organização do setor de passageiros e uma ampliação significativa de sua estrutura empresarial.</p>
                 <p>Sua história não se resume à compra de ônibus, à criação de linhas ou à mudança de identidade visual. Ela envolve a formação de uma empresa de transporte, a integração a um grupo empresarial, a expansão territorial, a transferência de operações de outras viações, a modernização dos serviços e a busca por novas autorizações para operar em mercados interestaduais.</p>
                 <p>O histórico oficial da companhia estabelece quatro marcos fundamentais: a origem em 1940, o registro como Viação Jequié Cidade Sol em 1976, a aquisição pelo Grupo Brasileiro em 1999 e a renovação da marca e ampliação de linhas em 2016. A esses acontecimentos somam-se mudanças posteriores, como a transferência de linhas da Santana em 2021, a incorporação das operações da Regional e da Jauá em 2025 e a ampliação de mercados interestaduais em 2026.</p>
                 <p>Esta reconstrução está organizada como um estudo histórico-empresarial. Ela diferencia fatos registrados, informações divulgadas pela companhia e interpretações sobre a importância de cada acontecimento. Isso é essencial porque não existe, nas fontes públicas localizadas, um arquivo histórico completo que permita descrever ano por ano todas as mudanças ocorridas desde a década de 1940.</p>
-
-                <!-- PARTE 1 -->
+ 
                 <h3 class="part-title">PARTE I — A ORIGEM E A FORMAÇÃO DA EMPRESA</h3>
-                
                 <h4>1. O contexto histórico do transporte rodoviário na Bahia</h4>
                 <p>Para entender o nascimento da Cidade Sol, é necessário observar o cenário em que surgiu. Na primeira metade do século XX, o transporte rodoviário de passageiros estava em processo de desenvolvimento no Brasil. As ferrovias atendiam determinadas regiões e corredores econômicos, mas não conectavam de maneira abrangente todos os municípios. Muitas localidades dependiam de estradas e serviços rodoviários para manter relações comerciais, políticas e sociais com outras cidades.</p>
                 <p>Na Bahia, as dimensões territoriais e a distribuição da população tornavam o transporte terrestre especialmente importante. As ligações entre municípios do interior, zonas agrícolas, centros comerciais e cidades litorâneas precisavam atender tanto a deslocamentos cotidianos quanto a viagens de longa distância.</p>
                 <p>O ônibus passou a ocupar um espaço estratégico porque permitia estabelecer conexões entre localidades que não necessariamente dispunham de ferrovias ou outros meios regulares de transporte de passageiros. Esse contexto ajuda a explicar a importância histórica de empresas regionais. Elas não eram apenas prestadoras de serviços: também constituíam parte da infraestrutura que permitia à população circular entre municípios. É nesse ambiente que deve ser situada a origem histórica da Cidade Sol, embora os documentos consultados não permitam atribuir a ela, especificamente, cada uma das transformações gerais do setor.</p>
-
+ 
                 <h4>2. 1940: a origem da Cidade Sol</h4>
                 <p>O histórico institucional da empresa informa que a Cidade Sol foi fundada em 1940, pela Empresa Brasil de Transportes Ltda. Esse é o marco inicial reconhecido pela própria companhia.</p>
                 <p>O ano de 1940 é importante porque estabelece a antiguidade histórica da operação. Entretanto, é necessário distinguir três conceitos:</p>
@@ -222,49 +184,38 @@
                 <p><strong>O que se sabe sobre os primeiros anos?</strong><br>As fontes institucionais disponíveis confirmam a origem em 1940, mas não apresentam um relato pormenorizado sobre: os nomes dos fundadores individuais; o primeiro endereço operacional; a quantidade de veículos da frota inicial; os modelos dos primeiros ônibus; os primeiros itinerários; o número inicial de funcionários; a evolução financeira da companhia durante as décadas de 1940 e 1950.</p>
                 <p>Por isso, não é possível afirmar com segurança se a empresa começou com determinado número de veículos, se atendia inicialmente apenas Jequié ou quais foram suas primeiras rotas. Esses detalhes exigiriam documentação histórica adicional, como livros societários, registros de linhas, arquivos de órgãos estaduais, jornais antigos ou documentos preservados pela própria empresa.</p>
                 <p><strong>A importância empresarial de 1940</strong><br>Mesmo com essas lacunas, a data possui significado histórico. Ela situa a origem da Cidade Sol em um período anterior à expansão de muitas das atuais estruturas rodoviárias brasileiras. Ao longo de sua trajetória, a empresa passou por uma transformação que a levou de uma origem empresarial histórica a uma operação integrada a um grupo de transporte de maior dimensão. A longevidade, por si só, não demonstra que a empresa tenha mantido a mesma estrutura societária ou operacional durante todo o período. O que ela demonstra é a continuidade da trajetória histórica reivindicada pela companhia.</p>
-
-                <!-- IMAGEM JEQUIE ANTIGA (Substitua na pasta assets) -->
-                <figure class="article-image">
-                    <img src="assets/jequie-antiga.jpg" alt="Transporte Histórico em Jequié">
-                    <figcaption>A história da empresa mistura-se com o desenvolvimento das rotas e a própria cidade de Jequié (Cidade Sol).</figcaption>
-                </figure>
-
+ 
                 <h4>3. 1940–1975: o período menos documentado</h4>
                 <p>O intervalo entre a fundação e o registro do nome Viação Jequié Cidade Sol é uma das partes mais difíceis de reconstruir com precisão. A empresa informa que sua origem remonta a 1940, mas seu histórico institucional resume esse longo período em vez de apresentar uma cronologia anual.</p>
                 <p>Não seria rigoroso preencher essas décadas com datas presumidas de aquisição de veículos, expansão de itinerários ou mudanças de proprietários sem evidências documentais. O que se pode estabelecer é que a história institucional reconhece uma fase anterior à formalização do nome de 1976 e que a companhia já possuía uma trajetória empresarial antes de sua aquisição pelo Grupo Brasileiro, ocorrida em 1999.</p>
                 <p>Essa distinção é importante: a história da Cidade Sol começou muito antes de sua integração ao Grupo Brasileiro. A aquisição de 1999 não representa a fundação da empresa, mas uma mudança posterior de controle empresarial.</p>
-
+ 
                 <h4>4. 1976: o registro como Viação Jequié Cidade Sol</h4>
                 <p>Em 1976, a empresa foi registrada como Viação Jequié Cidade Sol, segundo seu histórico oficial. Esse marco representa a consolidação da denominação empresarial pela qual a companhia se tornou conhecida.</p>
                 <p>O nome reúne duas referências geográficas e identitárias: Jequié, município baiano historicamente relacionado à empresa, e Cidade Sol, denominação que também possui forte associação cultural com a cidade. É importante, contudo, não confundir a história da empresa com a história do apelido de Jequié. A Prefeitura de Jequié informa que o codinome Cidade Sol foi formalizado por lei municipal em 2018, em reconhecimento a uma denominação já incorporada à memória local.</p>
                 <p>Portanto, existem duas histórias relacionadas, mas distintas:<br>1. A formação do nome empresarial Viação Jequié Cidade Sol.<br>2. A consolidação de Cidade Sol como denominação cultural associada a Jequié.<br>A proximidade entre essas referências ajuda a compreender a identidade histórica da companhia, mas não comprova, isoladamente, por que os fundadores escolheram esse nome ou qual foi a intenção original da denominação.</p>
-
-                <!-- PARTE 2 -->
+ 
                 <h3 class="part-title">PARTE II — A TRANSFORMAÇÃO EMPRESARIAL E A ENTRADA NO GRUPO BRASILEIRO</h3>
-                
                 <h4>5. 1999: a aquisição que marcou uma nova fase</h4>
                 <p>O ano de 1999 representa uma das principais divisões cronológicas da história da Cidade Sol. Segundo o histórico institucional, a empresa foi adquirida pelo Grupo Brasileiro. Na ocasião, a Cidade Sol possuía uma frota de 50 ônibus e aproximadamente 130 funcionários.</p>
                 <p>Esses números são particularmente relevantes porque oferecem um ponto de referência para entender a dimensão da operação naquele momento. A aquisição alterou o contexto organizacional no qual a Cidade Sol operava. A partir daí, a empresa passou a fazer parte de um grupo que também desenvolvia outras atividades de transporte rodoviário.</p>
                 <p><strong>Por que a aquisição foi tão importante?</strong><br>A integração a um grupo empresarial pode produzir mudanças em diferentes áreas: planejamento de investimentos; aquisição e renovação de veículos; organização das operações; administração de pessoal; manutenção e controle de frota; sistemas de vendas e atendimento; negociação com fornecedores; compartilhamento de conhecimentos e recursos.</p>
                 <p>Esses são mecanismos gerais pelos quais grupos de transporte podem obter ganhos de escala. No caso da Cidade Sol, o histórico institucional atribui expressamente à fase posterior à aquisição a ampliação de seus horizontes e de sua atuação. Entretanto, não há documentação pública suficiente para atribuir cada investimento ou cada nova linha a uma decisão específica tomada em 1999.</p>
                 <p><strong>A diferença entre comprar uma empresa e fundar uma empresa</strong><br>Esse ponto merece destaque porque é comum encontrar descrições resumidas que misturam os acontecimentos. A Cidade Sol não nasceu em 1999. A data corresponde à sua aquisição pelo Grupo Brasileiro. A empresa já tinha uma história de aproximadamente 59 anos desde o marco institucional de 1940 e 23 anos desde o registro da denominação Viação Jequié Cidade Sol. Assim, 1999 deve ser entendido como o início de uma nova etapa de organização e expansão, e não como o começo de sua existência.</p>
-
+ 
                 <h4>6. A formação de uma estrutura empresarial mais ampla</h4>
                 <p>A integração ao Grupo Brasileiro deve ser analisada dentro da evolução do próprio grupo. Uma das empresas que ajuda a compreender essa trajetória é a Rota Transportes. Segundo o histórico oficial da Rota, sua trajetória começou em 1978, em Itapetinga, conectando dez municípios do sul e sudoeste baianos. Ela foi adquirida pelo Grupo Brasileiro em 1995 e teve sua sede transferida para Itabuna.</p>
                 <p>A cronologia demonstra que a expansão do grupo não se iniciou com a Cidade Sol. A aquisição da Rota antecedeu em quatro anos a aquisição da Cidade Sol. Essa sequência ajuda a compreender uma estratégia empresarial baseada na integração de empresas com experiências, sedes operacionais e áreas de atuação distintas. O grupo também desenvolveu outras operações, incluindo a Expresso Brasileiro. A história oficial dessa companhia registra o início das atividades de transporte de passageiros a partir do fim da década de 1970, com a aquisição de ônibus usados, seguida pela ampliação de linhas e instalações.</p>
                 <p>A existência dessas empresas não significa que todas tenham sido fundidas juridicamente em uma única pessoa jurídica. É necessário distinguir: Grupo empresarial; Empresa operadora; Marca comercial; Linha autorizada. Essa distinção torna-se particularmente importante nos acontecimentos de 2021, 2025 e 2026.</p>
-
+ 
                 <h4>7. Os anos 2000: expansão regional e diversificação dos serviços</h4>
                 <p>Depois da aquisição de 1999, a Cidade Sol ampliou sua atuação para além de uma operação exclusivamente associada à sua origem histórica. O histórico institucional informa que a empresa passou a trabalhar com quatro grandes frentes: 1. Transporte coletivo rodoviário de passageiros; 2. Serviços de encomendas; 3. Fretamento de ônibus; 4. Viagens de turismo. Essa diversificação é importante porque cada atividade possui uma lógica operacional diferente.</p>
-                
                 <p><strong>7.1. Transporte regular de passageiros:</strong> Constitui a atividade central da empresa. Envolve a operação de viagens em itinerários estabelecidos, com horários, pontos de embarque e desembarque e condições de serviço sujeitas à regulação. Exige compatibilizar a demanda dos passageiros com a viabilidade operacional das viagens.</p>
                 <p><strong>7.2. Serviços de encomendas:</strong> Permite utilizar a estrutura operacional para movimentar objetos. Complementa o transporte de passageiros porque aproveita parte da rede de circulação, mas possui exigências próprias como armazenamento e logística específica.</p>
                 <p><strong>7.3. Fretamento:</strong> Funciona mediante serviço contratado para determinada finalidade (transporte de funcionários, excursões, eventos), em vez de rotas regulares predefinidas.</p>
                 <p><strong>7.4. Turismo:</strong> Representa outra possibilidade de utilização da estrutura da empresa, com a organização da viagem a considerar o destino, o perfil e as condições contratadas.</p>
-
-                <!-- PARTE 3 -->
+ 
                 <h3 class="part-title">PARTE III — A EXPANSÃO DA REDE E A CONSOLIDAÇÃO REGIONAL</h3>
-
                 <h4>8. A geografia da Cidade Sol: como a empresa se espalhou pela Bahia</h4>
                 <p>A expansão territorial é um dos elementos centrais da trajetória da Cidade Sol. O histórico oficial relaciona sua atuação às regiões Sul, Sudoeste, Baixo Sul, Recôncavo, Agreste baiano e à capital Salvador. A empresa também informa manter núcleos operacionais em Jequié, Salvador, Bom Despacho, Valença, Camamu, Alagoinhas, Gandu e Irecê. Essas informações permitem entender que a rede não depende apenas de uma cidade-sede. Ela exige pontos de apoio distribuídos por diferentes regiões.</p>
                 <p><strong>8.1. Sul da Bahia:</strong> Possui cidades importantes para o comércio, serviços e turismo, exigindo conexão entre centros urbanos e destinos com demanda sazonal.</p>
@@ -272,86 +223,70 @@
                 <p><strong>8.3. Baixo Sul e Recôncavo:</strong> Combinam cidades históricas, comunidades costeiras e municípios próximos à capital.</p>
                 <p><strong>8.4. Agreste baiano:</strong> Conexão entre municípios do interior que permite acessos vitais para comércio e educação.</p>
                 <p><strong>8.5. Salvador como centro de conexões:</strong> Ocupa posição estratégica. A relevância de Salvador tornou-se ainda mais visível em janeiro de 2026, quando a nova rodoviária começou a operar e identificou-se 103 trajetos da Cidade Sol partindo da capital.</p>
-
+ 
                 <h4>9. 2008: o contexto de modernização do transporte baiano</h4>
                 <p>Um registro da Secretaria de Infraestrutura da Bahia, publicado em 2008, oferece contexto sobre a modernização da frota no estado. Naquele ano, o governo estadual informou a incorporação de 98 ônibus destinados a 56 linhas, dentro de uma iniciativa que envolvia o grupo de transporte formado por Rota Transportes, Expresso Brasileiro, Cidade Sol e Viametro.</p>
                 <p>Esse registro é útil para entender que a modernização não ocorreu isoladamente, mas sim num movimento mais amplo de renovação da frota baiana. Entretanto, os 98 ônibus pertenciam ao conjunto de operações do grupo, e não exclusivamente à Cidade Sol.</p>
-
+ 
                 <h4>10. 2014–2016: o crescimento do grupo e a renovação da Cidade Sol</h4>
                 <p>A expansão de empresas relacionadas ao Grupo Brasileiro oferece outro elemento importante para compreender a evolução da Cidade Sol. A Rota Transportes informa que, em 2014, adquiriu 60% das linhas da Viação Bomfim e passou a atender destinos em Sergipe, Alagoas e Paraíba.</p>
                 <p><strong>10.1. A mudança de 2016:</strong> Em 2016, a Cidade Sol iniciou um novo ciclo. A empresa informa que: renovou a marca; reformulou o conceito de marketing; adquiriu novas linhas em direção à Chapada Diamantina; ampliou sua atuação para o sertão baiano; adotou um novo projeto de identidade visual. A relevância de 2016 está na combinação de expansão operacional e reposicionamento de marca.</p>
                 <p><strong>10.2. A Chapada Diamantina e o sertão:</strong> A entrada em novos mercados nessas regiões permitiu ampliar a cobertura. A Chapada reúne turismo, e o sertão apresenta extensas distâncias, exigindo diferentes padrões operacionais.</p>
-
-                <!-- IMAGEM NOVA IDENTIDADE (Substitua na pasta assets) -->
-                <figure class="article-image">
-                    <img src="assets/nova-identidade.jpg" alt="Nova Identidade Visual 2016">
-                    <figcaption>O ano de 2016 marcou o lançamento do novo padrão visual da frota e a expansão para a Chapada Diamantina.</figcaption>
-                </figure>
-
-                <!-- PARTE 4 -->
+ 
                 <h3 class="part-title">PARTE IV — TECNOLOGIA, FROTA E ORGANIZAÇÃO OPERACIONAL</h3>
-
                 <h4>11. 2021: a transferência das linhas da Santana e de parte das operações da Jauá</h4>
                 <p>O ano de 2021 demonstra que a expansão da Cidade Sol não aconteceu apenas por meio da criação de novas linhas. Em agosto de 2021, a imprensa especializada noticiou que a Cidade Sol assumiria as operações intermunicipais da Empresa de Transportes Santana e São Paulo. A Santana permaneceria com fretamento e turismo, transferindo as suas linhas regulares. Em dezembro, a empresa assumiu também três linhas da Viação Jauá.</p>
                 <p>Os acontecimentos de 2021 mostram modalidades diferentes de crescimento: abertura de mercados, transferência de linhas, e integração operacional, preparando terreno para o salto de 2025.</p>
-
+ 
                 <h4>12. A modernização dos ônibus: mais do que aparência</h4>
                 <p>A Cidade Sol passou a divulgar veículos com configurações variadas, incluindo ônibus convencionais, executivos e modelos para maior conforto. Um exemplo documentado ocorreu em junho de 2022, com o recebimento do Vissta Buss 360, montado sobre chassi Mercedes-Benz O-500 RS.</p>
                 <p>A renovação de frota significa operacionalmente ganhos em conforto (poltronas, climatização), segurança (equipamentos, controlo), acessibilidade, eficiência de combustível, e adequação exata da configuração do veículo à rota servida.</p>
-
+ 
                 <h4>13. 2024: ampliação da oferta de conforto</h4>
                 <p>Em maio de 2024, o Grupo Brasileiro apresentou uma nova frota de 52 ônibus destinados às operações da Rota Transportes e Cidade Sol no sudoeste da Bahia. Foi também marcado pelo lançamento do serviço Leito-Cama na linha Vitória da Conquista–Salvador. A categoria Leito-Cama representa uma diferenciação comercial valiosa em trajetos longos, competindo por atributos de experiência além de apenas horários disponíveis.</p>
-
+ 
                 <h4>14. 2025: micro-ônibus executivos, emissões e conectividade</h4>
                 <p>Em dezembro de 2025, foi noticiada a aquisição de novos micro-ônibus Marcopolo Senior (Mercedes-Benz LO 916), destinados ao serviço executivo RELLUZ. Os veículos atendiam ao padrão de emissões Proconve P8 (Euro 6), demonstrando que a renovação abrange todos os tamanhos de frota, focando na sustentabilidade e eficiência técnica, segmentando públicos através do serviço RELLUZ.</p>
-
+ 
                 <h4>15. A telemetria e o Centro de Controle Operacional</h4>
                 <p>A Cidade Sol informa que utiliza um Centro de Controle Operacional (CCO) em Itabuna, para acompanhar as viagens via telemetria, avaliando em tempo real o desempenho dos veículos e motoristas. A certificação ISO 9001:2015 suporta esta gestão de qualidade.</p>
-
+ 
                 <h4>16. Internet via satélite: o serviço STTAR ON</h4>
                 <p>Com o STTAR ON, a Cidade Sol introduziu internet via Starlink a bordo de veículos das categorias semileito, leito e leito-cama em linhas como Salvador para Barra, Canarana, Guanambi e Paulo Afonso. Isto transforma a viagem em algo produtivo para o passageiro corporativo e conectado, um passo importante na concorrência do setor rodoviário moderno.</p>
-
-                <!-- PARTE 5 -->
+ 
                 <h3 class="part-title">PARTE V — A GRANDE TRANSFORMAÇÃO DE 2025</h3>
-
                 <h4>17. Regional e Jauá: o encerramento de operações e a assunção pela Cidade Sol</h4>
                 <p>Em 1º de setembro de 2025, a Cidade Sol assumiu operações associadas às viações Regional e Jauá, após o encerramento de atividades dessas empresas. A Regional havia iniciado em 1995 no Polo Petroquímico de Camaçari, e a Jauá já tinha transferido 3 linhas em 2021.</p>
                 <p>Assumir uma operação integra incorporação de itinerários, reorganização de veículos, pontos de apoio, e equipas, sendo um desafio de complexidade logística muito superior a abrir uma linha de raiz.</p>
-
+ 
                 <h4>18. As consequências da expansão para os passageiros</h4>
                 <p>A ampliação trouxe oportunidades mas também os naturais desafios de transição, como pontuais reclamações em linhas como Candeias–Madre de Deus por fatores logísticos e de trânsito. A coordenação imediata de um volume elevado de linhas exige ajustes graduais nas escalas de manutenção, acompanhados de perto pelos sistemas de telemetria e controlo estatal (Agerba).</p>
-
-                <!-- PARTE 6 -->
+ 
                 <h3 class="part-title">PARTE VI — A CIDADE SOL EM 2026: NOVA RODOVIÁRIA E EXPANSÃO INTERESTADUAL</h3>
-
                 <h4>19. Janeiro de 2026: a nova Rodoviária de Salvador</h4>
                 <p>Em 20 de janeiro de 2026, a nova Rodoviária em Águas Claras, Salvador, entrou em funcionamento. Um levantamento destacou a Cidade Sol como a operadora de maior presença partindo do terminal, com 103 trajetos catalogados. Este número sublinha a densidade da rede, exigindo à empresa contínuas adaptações operacionais neste novo centro nevrálgico do transporte do estado.</p>
-
+ 
                 <h4>20. Maio de 2026: 304 novos mercados interestaduais</h4>
                 <p>O enorme marco regulatório de 2026 surgiu com a Janela Extraordinária nº 01/2024 da ANTT. A Cidade Sol conquistou 304 novos mercados, enquanto o Grupo Brasileiro (incluindo Rota) somou 1.445 mercados. As rotas aprovadas incluíam expansões notáveis para fora da Bahia, como: Alcobaça–São Paulo, Amargosa–São Paulo, Ilhéus–Atibaia e Itabuna–Atibaia.</p>
                 <p>O significado estratégico desta expansão é massivo: a rede transborda a Bahia para os corredores densos do sudeste, alterando o perfil competitivo da viação no panorama do país.</p>
-
+ 
                 <h4>21. A Cidade Sol e a expansão nacional do Grupo Brasileiro</h4>
                 <p>A Cidade Sol insere-se no tecido nacional através desta escalada progressiva: linhas locais em 2016, transferências em 2021 e 2025, saltando em definitivo em 2026 para as autorizações interestaduais da ANTT, operando como um pilar essencial na força do Grupo.</p>
-
-                <!-- PARTE 7 -->
+ 
                 <h3 class="part-title">PARTE VII — ESTRUTURA EMPRESARIAL, ADMINISTRAÇÃO E INDICADORES</h3>
-
                 <h4>22. A pessoa jurídica e a identidade comercial da Cidade Sol</h4>
                 <p>O CNPJ 14.602.189/0001-05 (Viação Jequié Cidade Sol Ltda.) tem registo desde 1968 segundo o Portal da Transparência, um dado administrativo a não confundir com a origem histórica reconhecida da operação em 1940. A marca "Cidade Sol" assume o rosto comercial destes marcos burocráticos.</p>
-
+ 
                 <h4>23. Frota e quadro de funcionários</h4>
                 <p>A dimensão notável atinge a marca dos aproximadamente 200 ônibus e quase 900 colaboradores diretos, contrastando fortemente com os 50 ônibus identificados no ato da aquisição do Grupo em 1999.</p>
-
+ 
                 <h4>24. Certificação de qualidade e gestão</h4>
                 <p>A norma ISO 9001:2015 estrutura o compromisso institucional da empresa na melhoria dos processos internos e regularidade do atendimento.</p>
-
+ 
                 <h4>25. O que os dados permitem concluir sobre o crescimento?</h4>
                 <p>Há uma cronologia indelével de crescimento em complexidade. Em vez de avaliar apenas por faturamento, vemos uma operadora local que galgou à modernização pesada, engoliu operações vizinhas por escala (Jauá e Regional) e projetou uma grelha de rotas capaz de atingir São Paulo e Minas Gerais.</p>
-
-                <!-- PARTE 8 -->
+ 
                 <h3 class="part-title">PARTE VIII — ANÁLISE HISTÓRICA: O QUE EXPLICA A TRAJETÓRIA DA CIDADE SOL?</h3>
-
                 <h4>26. Cinco fatores fundamentais para compreender a empresa</h4>
                 <ul>
                     <li><strong>Longevidade empresarial:</strong> Resiliência desde as fundações no interior (1940).</li>
@@ -360,7 +295,7 @@
                     <li><strong>Modernização operacional:</strong> Telemetria CCO, veículos Proconve P8, Leito-Cama e Wi-Fi Starlink a ditar a diferenciação premium.</li>
                     <li><strong>Ampliação regulada:</strong> A aprovação da ANTT em 2026 garante fôlego interestadual estratégico.</li>
                 </ul>
-
+ 
                 <h4>27. Quais foram os momentos mais decisivos?</h4>
                 <ol>
                     <li><strong>1940:</strong> Fundação histórica (Empresa Brasil de Transportes Ltda).</li>
@@ -369,22 +304,24 @@
                     <li><strong>2025:</strong> Assunção massiva das linhas da Regional e da Jauá, escalando dezenas de percursos novos.</li>
                     <li><strong>2026:</strong> Autorização dos novos mercados interestaduais da ANTT rumo a MG e SP, bem como a implantação na nova Rodoviária de Águas Claras.</li>
                 </ol>
-
+ 
                 <h4>28. O que ainda falta descobrir?</h4>
                 <p>Uma história sem pontas soltas requereria devassas de arquivos corporativos sobre os nomes exatos dos fundadores, relatórios exatos de faturamento inicial e listagens veiculares da década de 70. Contudo, as informações presentes moldam o percurso com exatidão para fins comerciais e institucionais.</p>
-
-                <div style="background-color: var(--bg-light); padding: 2rem; border-left: 5px solid var(--primary-yellow); margin-top: 3rem;">
-                    <h4 style="margin-top: 0;">Conclusão Geral</h4>
+ 
+                <div class="conclusao">
+                    <h4>Conclusão Geral</h4>
                     <p>A história da Viação Cidade Sol pode ser entendida como uma sucessão de fases distintas. Da origem histórica em 1940 e registo em 1976 até à aquisição capital de 1999. Nos anos seguintes, diversificou serviços, assumiu rotas da Santana, Regional e Jauá, cobriu a Bahia com nova roupagem (2016) e aportou no futuro interestadual em 2026.</p>
                     <p>O aspeto mais importante é a transformação gradual: de uma operação com raízes locais baianas para uma das faces mais tecnológicas e extensas do transporte nacional, munida de telecomunicações, serviço executivo de luxo, operando desde um moderno polo nevrálgico em Salvador para todo o Brasil.</p>
                 </div>
             </div>
         </div>
     </section>
+ 
     <footer class="footer">
         <p>&copy; Garagem Pirajá - Viação Cidade Sol</p>
     </footer>
-
+ 
     <script src="script.js"></script>
 </body>
 </html>
+ 
